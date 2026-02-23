@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel de Gestão</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="Public/css/Estilos.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">P-G</div>
+
+    <div class="search-box">
+        <input type="search" placeholder="Pesquisar...">
+        <button>
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+    </div>
+
+    <div class="header-icons">
+        <i class="fa-solid fa-calendar"></i>
+        <i class="fa-solid fa-calculator"></i>
+        <i class="fa-solid fa-bell"></i>
+        <div class="profile">
+            <img src="https://i.pravatar.cc/40" alt="">
+        </div>
+        <div class="menu-toggle">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </div>
+</header>
+
+<div class="container">
+
+    <nav id="navbar">
+        <h3>Navegação</h3>
+
+        <a href="#"><i class="fa-solid fa-house"></i><span> Inicio</span></a>
+        <a href="#"><i class="fa-solid fa-chart-line"></i><span> Finanças</span></a>
+        <a href="#"><i class="fa-solid fa-building"></i><span> Empresas</span></a>
+        <a href="#"><i class="fa-solid fa-users"></i><span> Usuários</span></a>
+        <a href="#"><i class="fa-solid fa-gear"></i><span> Configurações</span></a>
+        <a href="#"><i class="fa-solid fa-right-from-bracket"></i><span> Sair</span></a>
+    </nav>
+
+    <main>
+
+        <div class="cards">
+
+            <div class="card">
+                <h4>Usuários</h4>
+                <span id="usuarios">1.245</span>
+                <i class="fa-solid fa-users"></i>
+            </div>
+
+            <div class="card">
+                <h4>Gestores</h4>
+                <span id="gestores">87</span>
+                <i class="fa-solid fa-user-tie"></i>
+            </div>
+
+            <div class="card">
+                <h4>Finanças</h4>
+                <span id="financas">350.000 kz</span>
+                <i class="fa-solid fa-chart-column"></i>
+            </div>
+
+            <div class="card">
+                <h4>Empresas</h4>
+                <span id="empresas">32</span>
+                <i class="fa-solid fa-building"></i>
+            </div>
+
+        </div>
+
+    </main>
+
+</div>
+
+<footer>
+    © <span id="ano"></span> | Todos os Direitos Reservados
+</footer>
+
+<script src="Public/js/code.js"></script>
+</body>
+</html>
