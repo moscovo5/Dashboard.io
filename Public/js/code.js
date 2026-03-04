@@ -6,6 +6,17 @@ menu.addEventListener('click', () => {
     navbar.classList.toggle('click-menu');
 });
 
+// Menu responsivo
+const toggle = document.querySelector('.menu-toggle');
+const navbar = document.getElementById('navbar');
+
+toggle.addEventListener('click', () => {
+    navbar.classList.toggle('active');
+});
+
+// Ano automático no footer
+document.getElementById('ano').textContent = new Date().getFullYear();
+
 /* PESQUISA */
 const searchInput = document.querySelector('.search-box input');
 const cards = document.querySelectorAll('main .card');
@@ -58,4 +69,5 @@ function atualizarCards() {
 setInterval(atualizarCards, 5000);
 
 // Executa uma vez ao carregar
+
 atualizarCards();
