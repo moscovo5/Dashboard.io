@@ -176,4 +176,94 @@ footer{
     color:#fff;
     text-align:center;
     padding:15px;
+
+}
+
+/* ============================= */
+/* RESPONSIVIDADE ATÉ 1020px */
+/* ============================= */
+
+@media (max-width: 1020px) {
+
+    /* Container vira coluna */
+    .container {
+        flex-direction: column;
+    }
+
+    /* Navbar vira menu lateral oculto */
+    #navbar {
+        position: fixed;
+        left: -250px;
+        top: 70px;
+        width: 250px;
+        height: 100%;
+        background: #1e1e2f;
+        transition: 0.3s;
+        z-index: 1000;
+        padding-top: 20px;
+    }
+
+    #navbar.active {
+        left: 0;
+    }
+
+    /* Esconde texto do menu se quiser mais compacto */
+    #navbar a span {
+        display: inline;
+    }
+
+    /* Ajusta main */
+    main {
+        width: 100%;
+        padding: 20px;
+    }
+
+    /* Cards ficam 2 por linha */
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    /* Header ajustado */
+    header {
+        flex-wrap: wrap;
+        padding: 10px 15px;
+    }
+
+    .search-box {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .search-box input {
+        width: 100%;
+    }
+
+    /* Mostra botão menu */
+    .menu-toggle {
+        display: block;
+        cursor: pointer;
+    }
+}
+
+
+/* ============================= */
+/* MOBILE PEQUENO */
+/* ============================= */
+
+@media (max-width: 600px) {
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .header-icons i:not(.fa-bars) {
+        display: none;
+    }
+
+    .logo {
+        font-size: 18px;
+    }
+
 }
